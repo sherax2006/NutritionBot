@@ -9,7 +9,10 @@ import re
 load_dotenv()
 
 # Retrieve the API key from environment variables
-api_key = os.getenv("API_KEY")
+# api_key = os.getenv("API_KEY")
+
+api_key = st.secrets["general"]["API_KEY"]
+
 
 # Function to get Access Token
 def get_access_token(api_key):
@@ -41,7 +44,7 @@ Output:""",
         "parameters": {
             "decoding_method": "greedy",
             "max_new_tokens": 300,
-            "repetition_penalty": 1
+            "repetition_penalty": 2
         },
         "model_id": "ibm/granite-13b-chat-v2",
         "project_id": "0ea78626-771d-4791-9ed1-67b0af498daa",
