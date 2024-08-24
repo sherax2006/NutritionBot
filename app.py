@@ -218,15 +218,12 @@ if st.button("Get Recommendation"):
                 st.info("Can't find any diet plan based on the provided input. Please try again with a different query.")
 
 # Define prompts
-prompts = [
-    "Best diet for weight loss",
+prompts = [ 
     "Nutrition tips for athletes",
     "Healthy meal plans",
     "Supplements guide",
-    "Importance of hydration",
-    "Benefits of fruits and vegetables",
-    "Protein-rich diet benefits",
-    "Guide to vitamins and minerals",
+    "Importance of hydration", 
+    "Protein-rich diet benefits", 
     "Carbohydrates and their role",
     "Fat: myths and facts"
 ]
